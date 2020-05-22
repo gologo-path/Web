@@ -5,16 +5,22 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>3 Column Layout</title>
 	<link rel="stylesheet" href="assets/css/layout.css">
-	<script src="assets/js/script.js"></script>
+	<link rel="stylesheet" href="assets/css/Style.css">
 </head>
 <body>
 	<header class="header"><p>Header...</p><p><img src="assets/img/logo.png"></p></header>
 		<div class="container">
 			<main class="center column">
-				<article>
-					<h1>Slider</h1>
-					<p></p>
-				</article>
+				<h1>Slider</h1>
+				<div id="mySlider">
+				</div>
+				<img src="assets/img/left.jpg" align=left onclick="prevSlide()">
+				<img src="assets/img/1.png" align=center onclick="setSlide(1)">
+				<img src="assets/img/2.png" align=center onclick="setSlide(2)">
+				<img src="assets/img/3.png" align=center onclick="setSlide(3)">
+				<img src="assets/img/right.jpg" align=right onclick="nextSlide()">
+				<script src="assets/js/script.js"></script>
+				
 			</main>
 		
 			<nav class="left column">
